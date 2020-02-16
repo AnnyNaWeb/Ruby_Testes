@@ -27,16 +27,15 @@ def verifica_acerto(num, chute)
 	if acertou
 		puts "Acertou! "
 		return true
-	else
-		maior = num > chute
-		if maior
-		puts "O número é maior!"
-		return false
-		else
-		puts "O número é menor!"
-		return false
-		end
 	end
+
+	maior = num > chute
+	if maior
+		puts "O número é maior!"
+	else
+		puts "O número é menor!"
+	end
+	return false
 end
 
 bemvindo
