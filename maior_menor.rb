@@ -35,7 +35,7 @@ def verifica_acerto(num, chute)
 	else
 		puts "O número é menor!"
 	end
-	return false
+	false
 end
 
 bemvindo
