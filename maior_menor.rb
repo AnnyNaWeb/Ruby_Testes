@@ -44,8 +44,8 @@ num = sorteia_num
 limite = 3
 	
 for tentativa in 1...limite
-	chute = pede_num(tentativa, limite)
-	if verifica_acerto(num, chute)
+	chute = pede_num tentativa, limite
+	if verifica_acerto num, chute
 		break
 	end
 
