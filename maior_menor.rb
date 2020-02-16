@@ -8,8 +8,9 @@ puts "Escolhendo um número entre 0 e 200..."
 num = 53
 puts "Número escolhido. Que tal adivinhar? \n\n"
 
-for tentativa in 1...3
-	puts "Tentativa " + tentativa.to_s + " de 3"
+limite = 3
+for tentativa in 1...limite
+	puts "Tentativa " + tentativa.to_s + " de " + limite.to_s
 	puts "Entre com um número: "
 	chute = gets
 	puts "Será que acertou? Você chutou " + chute
