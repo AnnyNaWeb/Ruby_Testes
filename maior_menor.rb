@@ -19,6 +19,7 @@ for tentativa in 1...limite
 	acertou = num == chute.to_i
 	if acertou
 		puts "Acertou! "
+		break
 	else
 		maior = num > chute.to_i
 		if maior
