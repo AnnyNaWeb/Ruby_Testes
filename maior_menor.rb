@@ -16,4 +16,4 @@ puts "Tentativa 001"
 puts "Entre com um número: "
 chute = gets
 puts "Será que acertou? Você chutou " + chute
-puts chute == num 
+puts chute.to_i == num 
