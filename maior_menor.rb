@@ -12,7 +12,10 @@ puts "Tentativa 001"
 puts "Entre com um número: "
 chute = gets
 puts "Será que acertou? Você chutou " + chute
-if num == chute.to_i
+
+#verificando se acertou
+acertou = num == chute.to_i
+if acertou
 	puts "Acertou! "
 else
 	puts "Errou!"
