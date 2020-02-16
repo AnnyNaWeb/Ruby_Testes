@@ -19,6 +19,7 @@ def pede_num(tentativa, limite)
 	puts "Entre com um número: "
 	chute = gets
 	puts "Será que acertou? Você chutou " + chute
+	chute.to_i
 end
 bemvindo
 num = sorteia_num
@@ -28,12 +29,12 @@ limite = 3
 for tentativa in 1...limite
 	chute = pede_num(tentativa, limite)
 
-	acertou = num == chute.to_i
+	acertou = num == chute
 	if acertou
 		puts "Acertou! "
 		break
 	else
-		maior = num > chute.to_i
+		maior = num > chute
 		if maior
 		puts "O número é maior!"
 		else
