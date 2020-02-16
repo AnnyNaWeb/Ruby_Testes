@@ -13,10 +13,14 @@ puts "Entre com um número: "
 chute = gets
 puts "Será que acertou? Você chutou " + chute
 
-#verificando se acertou
 acertou = num == chute.to_i
 if acertou
 	puts "Acertou! "
 else
-	puts "Errou!"
+	maior = num > chute.to_i
+	if maior
+	puts "O número é maior!"
+	else
+	puts "O número é menor!"
+	end
 end
