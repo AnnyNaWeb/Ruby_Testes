@@ -14,8 +14,9 @@ def sorteia_num
 	sorteado
 end
 
-def pede_num(tentativa, limite)
+def pede_num(chutes, tentativa, limite)
 	puts "Tentativa " + tentativa.to_s + " de " + limite.to_s
+	puts "Chutes até agora " + chutes.to_s
 	puts "Entre com um número: "
 	chute = gets
 	puts "Será que acertou? Você chutou " + chute
@@ -38,13 +39,19 @@ def verifica_acerto(num, chute)
 	false
 end
 
+
+
 bemvindo
 num = sorteia_num
 
-limite = 3
+limite = 4
+chutes = []
+
 	
 for tentativa in 1...limite
-	chute = pede_num tentativa, limite
+	chute = pede_num chutes, tentativa, limite
+	chutes << chute
+
 	if verifica_acerto num, chute
 		break
 	end
