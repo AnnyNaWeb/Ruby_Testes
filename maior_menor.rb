@@ -1,7 +1,7 @@
 def bemvindo
 	puts "Bem vindo ao jogo de adivinhação"
 	puts"Qual é o seu nome?"
-	nome = gets
+	nome = gets.strip
 	puts "\n \n \n \n"
 	puts "Começaremos o jogo para você, " + nome + "\n"
 end
@@ -18,7 +18,7 @@ def pede_num(chutes, tentativa, limite)
 	puts "Tentativa " + tentativa.to_s + " de " + limite.to_s
 	puts "Chutes até agora " + chutes.to_s
 	puts "Entre com um número: "
-	chute = gets
+	chute = gets.strip
 	puts "Será que acertou? Você chutou " + chute
 	chute.to_i
 end
