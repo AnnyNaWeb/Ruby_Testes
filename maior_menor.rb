@@ -13,17 +13,20 @@ def sorteia_num
 	
 	sorteado
 end
+
+def pede_num(tentativa, limite)
+	puts "Tentativa " + tentativa.to_s + " de " + limite.to_s
+	puts "Entre com um número: "
+	chute = gets
+	puts "Será que acertou? Você chutou " + chute
+end
 bemvindo
 num = sorteia_num
 
 limite = 3
 	
 for tentativa in 1...limite
-	puts "Tentativa " + tentativa.to_s + " de " + limite.to_s
-	puts "Entre com um número: "
-	chute = gets
-	puts "Será que acertou? Você chutou " + chute
-
+	chute = pede_num(tentativa, limite)
 
 	acertou = num == chute.to_i
 	if acertou
